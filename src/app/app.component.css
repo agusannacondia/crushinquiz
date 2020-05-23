@@ -1,0 +1,175 @@
+@font-face {
+  font-family: grobold;
+  src: url(../assets/font/GROBOLD.ttf);
+}
+
+@font-face {
+  font-family: clock;
+  src: url(../assets/font/CLOCK.ttf);
+}
+
+@font-face {
+  font-family: highscores;
+  src: url(../assets/font/PIXEL.ttf);
+}
+
+@font-face {
+  font-family: nintendo;
+  src: url(../assets/font/NINTENDO.ttf);
+}
+
+.row{
+	margin-right: 0px;
+    margin-left: 0px;
+}
+
+.container-fluid{
+	height: 90vh;
+	padding: 0px;
+	background: #FDC830;
+	background: -webkit-linear-gradient(left, #F37335, #FDC830);
+	background: -o-linear-gradient(left, #F37335, #FDC830);
+	background: linear-gradient(to right, #F37335, #FDC830);
+	text-align: center;
+}
+
+.index .logo{
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.index .logo img{
+	height: 75%; 
+	animation:spin 4s linear infinite;
+}
+
+@keyframes spin { 
+	100% { 
+		-webkit-transform: rotate(360deg); 
+		transform:rotate(360deg); 
+	} 
+}
+
+
+.index .header{
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.index .header h1{
+	color: #fff;
+	font-family: grobold; 
+}
+
+.index .body{
+	height: 50%;
+	display: block;
+}
+
+.index .body .col-12{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.index .body .btn,
+.index .body input,
+.index .body label{
+	width: 70%;
+	margin: 0px auto;
+}
+
+.index .body label{
+	left: 0px !important;
+	text-align: left;
+	color: #fff;
+}
+
+.index .footer{
+	height: 10%;
+	color: #fff;
+}
+
+/*	--------------------   QUIZ   --------------------	*/
+
+.quiz .tiempo{
+	margin-bottom: 10px;
+}
+
+.quiz .pregunta{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.quiz .pregunta h2{
+	color: #fff;
+	font-size: 20px;
+	font-family: Helvetica;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.quiz .tiempo h3{
+	margin: 0px auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: black;
+	font-family: clock;
+	color: red;
+}
+
+.quiz .opciones{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.quiz .opciones .btn{
+	width: 90%;
+	margin-top: 10px;
+}
+
+/*	--------------------   PUNTAJES   --------------------	*/
+
+.puntajes .high-scores{
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.puntajes .tabla{
+	height: 60%;
+}
+
+.puntajes .tabla .table{
+	padding: 10px;
+	color: #fff;
+	font-family: nintendo; 
+	font-size: 25px;
+}
+
+.puntajes .tabla .table td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.puntajes .boton{
+	height: 20%;
+}
+
+.puntajes .boton .btn{
+	width: 80%;
+}
+
+.puntajes h2{
+	font-family: highscores;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
